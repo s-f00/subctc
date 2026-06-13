@@ -1,7 +1,7 @@
 CC = gcc
 CFLAGS = -Wall -Wextra 
 
-TARGET = build
+TARGET = subctc
 
 SOURCES = build.c scanner.c
 OBJECTS = $(SOURCES:.c=.o)

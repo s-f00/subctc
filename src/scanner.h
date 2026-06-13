@@ -23,6 +23,7 @@ typedef enum {
   KEYWORD,
   STRING,
   OPERATOR,
+  CONST,
   IDENTIFIER,
 } tokenType;
 
@@ -40,6 +41,9 @@ typedef struct tList {
   token *tail;
 } tList;
 
+tList *tokenList;
+
 void scan(const char *filename);
+void generate_string_token(char *buffer, int *buffer_index, token *t);
 void appendToken(tList *list, token *);
-void printTokenList(tList *list);
+void printToken(token *t);
