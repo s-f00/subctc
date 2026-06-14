@@ -3,7 +3,7 @@ CFLAGS = -Wall -Wextra
 
 TARGET = subctc
 
-SOURCES = build.c scanner.c
+SOURCES = build.c frontend/scanner.c
 OBJECTS = $(SOURCES:.c=.o)
 
 all: $(TARGET)
